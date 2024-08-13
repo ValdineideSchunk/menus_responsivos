@@ -10,7 +10,7 @@
 /* Estiliza o header */
 header {
     background-color: #0e4751; /* Cor de fundo */
-    box-shadow: opx 3px 10px #464646; /* Sombra do box */
+    box-shadow: 0px 3px 10px #464646; /* Sombra do box */
 }
 
 /* Estiliza a barra de navegação */
@@ -133,6 +133,6 @@ header {
     }
 
     .open {
-        display: block; /* Mostra elementos com a classe 'open' */
+       display: block; /* Mostra elementos com a classe 'open' */
     }
 }
