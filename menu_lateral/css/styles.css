@@ -22,9 +22,10 @@ main{
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: relative;
-    transition: all .5s;
+    transition: min-width 0.6s; /* Sincronize com o tempo do JavaScript */
     min-width: 82px;
 }
+
 
 #sidebar_content{
     padding: 12px;
@@ -67,9 +68,7 @@ main{
     cursor: pointer;
 }
 
-.side-item.active {
-    background-color: #4f46e5;
-}
+
 .side-item:hover:not(active), #logout_btn:hover{
     background-color: #e3e9f7;
 }
@@ -77,21 +76,18 @@ main{
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     color: #0a0a0a;
-
-}
-
-.side-item.active a {
-    color: #e3e9f7;
+    justify-content: flex-start; /* Mantém os ícones à esquerda */
+    gap: 14px; /* Espaço fixo entre o ícone e o texto */
 }
 
 .side-item a i {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
+    width: 23px;
     height: 20px;
+    font-size: 25px;
 }
 
 #logout {
@@ -123,13 +119,14 @@ main{
     height: 20px;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a rotação */
 }
 
 #open_btn_icon {
     transition: transform .3s ease;
 }
-.open-sidebar #open_btn_icon {
-    transform: rotate(180deg);
+#sidebar.open-sidebar #open_btn {
+    transform: rotate(180deg); /* Rotaciona o botão quando o menu está aberto */
 }
 
 .item-description {
@@ -138,32 +135,21 @@ main{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 14px;
-    transition: width .6s;
-    height: 0px;
-}
-
-#sidebar.open-sidebar{
-    min-width: 150px;
-}
-
-#sidebar.open-sidebar .item-description {
-    width: 120px; 
+    transition: width 0.6s; /* Sincronize com o tempo do JavaScript */
     height: 20px;
 }
 
-#sidebar.open-sidebar .side-item a {
-    justify-content: flex-start;
-    gap: 14px;
+#sidebar.open-sidebar {
+    min-width: 200px; /* Ajuste a largura conforme necessário */
 }
 
+#sidebar.open-sidebar .item-description {
+    width: 10px; /* Ajuste a largura conforme necessário */
+}
 
-
-
-
-
-
-
-
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start; /* Mantém a posição fixa dos ícones */
+}
 
 
 
