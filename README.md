@@ -1,1 +1,1 @@
-# menus_responsivos
+O menu responsivo foi criado com HTML, CSS e JavaScript. Em telas grandes, ele exibe um logo, links e um botão de reserva. Em telas menores, esses itens são ocultados e substituídos por um ícone de menu. Ao clicar no ícone, o menu se expande, mostrando os links e o botão de forma vertical. A responsividade é controlada pelo CSS, e a abertura e fechamento do menu móvel são gerenciados por JavaScript.

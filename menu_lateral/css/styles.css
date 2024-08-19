@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
-   font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     display: flex;
     min-height: 100vh;
     background-color: #e3e9f7;
 }
-main{
+
+main {
     padding: 20px;
 }
 
@@ -26,11 +29,10 @@ main{
     min-width: 82px;
 }
 
-
-#sidebar_content{
+#sidebar_content {
     padding: 12px;
 }
-   
+
 #user {
     display: flex;
     align-items: center;
@@ -49,11 +51,12 @@ main{
     display: flex;
     flex-direction: column;
 }
+
 #user_infos span:last-child {
     color: #6b6b6b;
     font-size: 12px;
-
 }
+
 #side_items {
     display: flex;
     flex-direction: column;
@@ -61,17 +64,16 @@ main{
     list-style: none;
 }
 
-
 .side-item {
     border-radius: 8px;
     padding: 14px;
     cursor: pointer;
 }
 
-
-.side-item:hover:not(active), #logout_btn:hover{
+.side-item:hover:not(active), #logout_btn:hover {
     background-color: #e3e9f7;
 }
+
 .side-item a {
     text-decoration: none;
     display: flex;
@@ -123,8 +125,9 @@ main{
 }
 
 #open_btn_icon {
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
+
 #sidebar.open-sidebar #open_btn {
     transform: rotate(180deg); /* Rotaciona o botão quando o menu está aberto */
 }
@@ -144,12 +147,9 @@ main{
 }
 
 #sidebar.open-sidebar .item-description {
-    width: 10px; /* Ajuste a largura conforme necessário */
+    width: 120px; /* Ajuste a largura conforme necessário */
 }
 
 #sidebar.open-sidebar .side-item a {
     justify-content: flex-start; /* Mantém a posição fixa dos ícones */
 }
-
-
-
